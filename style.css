@@ -1,10 +1,10 @@
 /*
-Theme Name: College
-Theme URI: https://www.college.edu/
-Description: College Theme
-Author: Anish Maka
-Author URI: https://www.college.edu/
-Version: 1.0
+    Theme Name: College
+    Theme URI: https://www.college.edu/
+    Description: College Theme
+    Author: Anish Maka
+    Author URI: https://www.college.edu/
+    Version: 1.0
 */
 
 body {
@@ -638,8 +638,8 @@ ul {
     margin-bottom: 20px;
 }
 
-.course-services .item p {
-}
+/* .course-services .item p {
+} */
 
 .course-tabs {
     position: relative;
