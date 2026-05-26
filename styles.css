@@ -1,0 +1,1349 @@
+/*
+Theme Name: College
+Theme URI: https://www.college.edu/
+Description: College Theme
+Author: Anish Maka
+Author URI: https://www.college.edu/
+Version: 1.0
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    background-color: #f5f5f5;
+}
+
+body, html {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a, span {
+    display: inline-block;
+}
+
+a, button, input[type="submit"] {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+p {
+    color: #7a7a7a;
+    font-weight: 400;
+}
+
+/* Fonts links css */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/montserrat-black-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('fonts/poppins-regular-webfont.woff2') format('woff2'),
+    url('fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('fonts/poppins-medium-webfont.woff2') format('woff2'),
+    url('fonts/poppins-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('fonts/poppins-bold-webfont.woff2') format('woff2'),
+    url('fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Black'), local('Roboto-Black'),
+    url('fonts/Roboto-Black.woff2') format('woff2'),
+    url('fonts/Roboto-Black.woff') format('woff'),
+    url('fonts/Roboto-Black.svg#Roboto-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+    url('fonts/Roboto-Medium.woff2') format('woff2'),
+    url('fonts/Roboto-Medium.woff') format('woff'),
+    url('fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light'), local('Roboto-Light'),
+    url('fonts/Roboto-Light.woff2') format('woff2'),
+    url('fonts/Roboto-Light.woff') format('woff'),
+    url('fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Thin'), local('Roboto-Thin'),
+    url('fonts/Roboto-Thin.woff2') format('woff2'),
+    url('fonts/Roboto-Thin.woff') format('woff'),
+    url('fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('fonts/Roboto-Bold.woff2') format('woff2'),
+    url('fonts/Roboto-Bold.woff') format('woff'),
+    url('fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'),
+    url('fonts/Roboto-Regular.woff2') format('woff2'),
+    url('fonts/Roboto-Regular.woff') format('woff'),
+    url('fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* End Fonts links css */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", Sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-gaps {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.top-section-gaps {
+    padding-top: 80px;
+}
+
+.bottom-section-gaps {
+    padding-bottom: 80px;
+}
+
+.light-bg {
+    background-color: #f5f5f5;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.light-txt {
+    color: #f5f5f5;
+}
+
+.white-txt {
+    color: #fff;
+}
+.light-black-bg{
+    background-color: #313131;
+}
+.red-bg{
+     background-color: #dd3333;
+ }
+.red-txt{
+   color: #dd3333;
+}
+
+/* Title sty css */
+
+.main-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.main-title .title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.main-title .sub-content {
+    max-width: 485px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.main-title.line {
+    padding-top: 18px;
+    position: relative;
+}
+
+.main-title.line:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 6%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff5252;
+}
+
+/* End  Title sty css */
+
+/* Button sty css */
+
+.box-tp-sty {
+    font-size: 13px;
+    letter-spacing: 2px;
+    min-width: 170px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.box-tp-sty:hover {
+    background: #ff5252;
+    color: #fff;
+    border-color: #ff5252;
+}
+
+.border-sty-btn {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(62, 90, 251, 0);
+    border-radius: 50px 50px 50px 50px;
+    padding: 16px 35px 16px 35px;
+    border: 2px solid #fff;
+}
+.btn-sty-1{
+    color: #DD3333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.btn-sty-1 i{
+    margin-left: 4px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.btn-sty-1:hover{
+    color: #DD3333;
+}
+.btn-sty-1:hover i{
+    margin-left: 8px;
+}
+
+/* End  Button sty css */
+
+/* Header section css */
+.top-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.top-header .contact-info li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.top-header .contact-info li a {
+    padding-left: 6px;
+    position: relative;
+    font-size: 14px;
+    color: #8a8a8a;
+    font-weight: 700;
+}
+
+.top-header .contact-info li a:before {
+    position: absolute;
+    left: -15px;
+    top: 0;
+    font-family: "Font Awesome 5 Free";
+
+}
+
+.top-header .contact-info li.phone a:before {
+    content: '\f879';
+    font-weight: 900;
+}
+
+.top-header .contact-info li.email a:before {
+    content: '\f0e0';
+    font-weight: 400;
+}
+
+.top-header .contact-info li + li {
+    margin-right: 10px;
+    border-left: 1px solid #8a8a8a;
+    padding-left: 30px;
+}
+
+.top-header .right {
+    text-align: right;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links li + li {
+    margin-left: 10px;
+}
+
+.social-links li a {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.bottom-header nav {
+    text-align: right;
+}
+
+.primary-menu {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.primary-menu > li {
+    padding-right: 15px;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.primary-menu > li > a {
+    line-height: 55px;
+    color: #808080;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    padding: 10px 8px 10px 8px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    text-shadow: none;
+}
+
+.primary-menu > li > a:hover {
+    color: #ff5252;
+}
+
+/* End Header section css */
+
+/* Main header section css */
+
+.main-banner,
+.main-banner .slick-list,
+.main-banner .slick-track,
+.main-banner .item,
+.main-banner .bg-img-holder {
+    height: 100%;
+}
+
+.main-banner .item .caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.slick-arrow {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 1;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 70px;
+    min-height: 70px;
+    color: #fff;
+    line-height: 70px;
+    text-align: center;
+    display: block;
+
+    border-radius: 50%;
+}
+
+.slick-arrow.slick-prev {
+    left: 15px;
+}
+
+.slick-arrow.slick-next {
+    right: 15px;
+}
+
+.slick-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slick-dots li {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 2px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 50px;
+    line-height: 0;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease;
+    background-color: #777;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.slick-dots li.slick-active button {
+    width: 20px;
+    transition: all 0.3s ease;
+    background-color: #DD3333;
+    border-color: #DD3333;
+}
+
+.main-banner .caption h1,
+.main-banner .caption h2 {
+    font-family: Roboto;
+    text-transform: capitalize;
+}
+
+.main-banner .bg-img-holder,
+.fixed-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.fixed-bg {
+    background-attachment: fixed;
+}
+
+.main-banner .caption h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #000;
+}
+
+.main-banner .caption h2 {
+    font-size: 60px;
+    font-weight: 100;
+    color: #000;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.main-banner .caption h2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 245px;
+    height: 1px;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+}
+
+/* End Main header section css */
+
+/* Course Section css */
+
+.course-grid-lists .full .item {
+    height: 100%;
+}
+
+.course-grid-lists .full .item .img-holder {
+    position: relative;
+
+}
+
+.course-grid-lists .item h2 {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin: 0;
+}
+
+.course-grid-lists .col-md-3 .item + .item {
+    padding-top: 30px;
+}
+
+.course-grid-lists .item .img-holder {
+    height: 100%;
+    position: relative;
+}
+
+.course-grid-lists .item .img-holder:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+}
+
+.course-grid-lists .item.dark-blue .img-holder:before {
+    background-color: rgba(0, 14, 140, 0.81);
+}
+
+.course-grid-lists .item.light-blue-gray .img-holder:before {
+    background-color: rgba(0, 160, 144, 0.81);
+}
+
+.course-grid-lists .item.blue-gray .img-holder:before {
+    background-color: rgba(0, 99, 119, 0.81);
+}
+
+.course-grid-lists .item.blue .img-holder:before {
+    background-color: rgba(0, 46, 89, 0.81);
+}
+
+.course-grid-lists .item.red .img-holder:before {
+    background-color: rgba(255, 82, 82, 0.67);
+}
+
+.course-grid-lists .item {
+    height: 50%;
+}
+
+.course-services .item {
+    text-align: center;
+}
+
+.course-services .item .title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #02b3e4;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.course-services .item .title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color: #ff5252;
+}
+
+.course-services .item .icon-holder {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.course-services .item p {
+}
+
+.course-tabs {
+    position: relative;
+}
+
+.course-tabs .shape {
+    position: absolute;
+    top: -120px;
+    left: 0;
+    right: 0;
+    -webkit-transform: rotateX(140deg);
+    -moz-transform: rotateX(140deg);
+    -ms-transform: rotateX(140deg);
+    -o-transform: rotateX(140deg);
+    transform: rotateX(140deg);
+}
+
+.course-tabs .shape svg {
+    fill: #fff;
+}
+
+.course-tabs .nav-tabs {
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.course-tabs .nav-tabs .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 20px;
+    border: none;
+    text-transform: capitalize;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.course-tabs .nav-tabs .nav-link:focus,
+.course-tabs .nav-tabs .nav-link:hover {
+    border: none;
+    outline: none;
+}
+
+.course-tabs .nav-tabs .nav-link.active,
+.course-tabs .nav-tabs .nav-item.show .nav-link {
+    color: #ecb101;
+    background-color: #fff;
+    border-bottom: 4px solid #ecb101;
+}
+
+.course-info-items .item .box {
+    background-color: #f7f7f7;
+}
+
+.course-info-items .item {
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.course-info-items .img-holder {
+    height: 196px;
+}
+
+.course-info-items .img-holder a {
+    height: 100%;
+    width: 100%;
+}
+
+.course-info-items .item .title a,
+.title.sm {
+    font-family: "Roboto", Sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+}
+
+.course-info-items .content {
+    padding: 15px 15px 10px 15px;
+}
+
+.course-info-items .tags-student > div {
+    display: inline-block;
+    flex: 0 0 auto;
+}
+
+.course-info-items .tags-student > .students {
+    flex: 0 0 80px;
+    -ms-flex: 0 0 80px;
+    max-width: 80px;
+    text-align: right;
+}
+
+.tags-student ul li {
+    display: inline-block;
+}
+
+.tags-student .free-tag,
+.tags-student ul li a {
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 7px;
+    font-size: 12px;
+}
+
+.tags-student .free-tag {
+    background: #EEB90E;
+    color: #fff;
+}
+
+.course-info-items .tags-student {
+    margin-bottom: 20px;
+}
+
+.tags-student ul li a {
+    background: #ddd;
+    color: #777777;
+}
+
+.course-info-items .content p {
+    font-size: 16px;
+    color: #666;
+}
+
+.tags-student .students span {
+    padding-left: 25px;
+    position: relative;
+    color: #666;
+    font-size: 14px;
+}
+
+.tags-student .students span i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+
+}
+
+.course-info-items .slick-arrow {
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    color: #ecb101;
+    min-height: 47px;
+    min-width: 47px;
+    line-height: 47px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.course-info-items .slick-arrow.slick-prev {
+    left: 0;
+}
+
+.course-info-items .slick-next.slick-arrow {
+    right: 0;
+}
+
+.course-info-items.multi-slider:hover .slick-arrow {
+    visibility: visible;
+    opacity: 1;
+}
+
+.course-info-items.multi-slider:hover .slick-arrow.slick-prev {
+    left: -10px;
+}
+
+.course-info-items.multi-slider:hover .slick-next.slick-arrow {
+    right: -10px;
+}
+
+/* End Course Section css*/
+
+/* Upcoming Event section css*/
+
+.upcoming-events-section {
+    position: relative;
+}
+
+.upcoming-events-section:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #03132d;
+    opacity: 0.6;
+}
+
+.upcoming-events-section .container {
+    position: relative;
+}
+
+.upcoming-events-section .main-title .title {
+    font-family: "Poppins", Sans-serif;
+    font-weight: 700;
+}
+
+.upcoming-events-section .main-title,
+.upcoming-events-section .main-title .title,
+.upcoming-events-section .main-title p {
+    text-align: left;
+    color: #fff;
+}
+
+.upcoming-events-section .main-title > div {
+    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.upcoming-events-section .main-title .title {
+    margin-bottom: 25px;
+}
+
+.upcoming-events-section .main-title .view-btn {
+    text-align: right;
+}
+
+.upcomming-lists .item {
+    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    max-width: 50%;
+
+}
+
+.upcomming-lists .item .date {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.upcomming-lists .item .date:before {
+    content: '\f073';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.upcomming-lists .item {
+    padding: 45px 35px;
+}
+
+.upcomming-lists .item a {
+    color: #fff;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.upcomming-lists .item a:hover {
+    -webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -ms-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.upcomming-lists .item .title {
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.upcomming-lists .item p {
+    color: #fff;
+}
+
+.upcomming-lists .item.red {
+    background-color: rgba(255, 82, 82, 0.67);
+}
+
+.upcomming-lists .item.blue {
+    background-color: rgba(37, 53, 170, 0.83);
+}
+
+.upcomming-lists .item .img-holder {
+    height: 180px;
+}
+
+/* End Upcoming Event section css*/
+
+/* What's students say section css*/
+
+.testimonials-items .item {
+    background: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 70px;
+    position: relative;
+}
+
+.testimonials-items .item:before {
+    content: '\f10e';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.05);
+}
+
+.testimonials-items .item .name-position > span {
+    display: block;
+}
+
+.testimonials-items .item .name-position .name {
+    color: #DD3333;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.testimonials-items .item .name-position .position {
+    color: #192330;
+    font-size: 12px;
+}
+
+.testimonials-items .item p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #4c5b6d;
+}
+
+.testimonials-items .item,
+.testimonials-items .item p,
+.testimonials-items .item .name-position > span {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.testimonials-items .item:hover {
+    background: #DD3333;
+}
+
+.testimonials-items .item:hover p,
+.testimonials-items .item:hover .name-position > span {
+    color: #fff;
+}
+
+.testimonials-items .slick-list {
+    padding: 10px 0;
+}
+
+/* End What's students say section css*/
+
+/*  Video section css */
+
+.video-section {
+    position: relative;
+    padding-top: 110px;
+    overflow: hidden;
+    padding-bottom: 110px;
+}
+
+.video-section:before {
+    content: '';
+    background-color: #08162d;
+    opacity: 0.8;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.video-section .shape-after,
+.video-section .shape-before {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.video-section .shape-after svg,
+.video-section .shape-before svg {
+    fill: #f5f5f5;
+    width: calc(200% + 1.3px);
+    height: 8px;
+}
+
+.video-section .shape-before svg {
+    fill: #fff;
+}
+
+.video-section .shape-before {
+    top: -9px;
+}
+
+.video-section .shape-after {
+    bottom: -9px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.video-section .title {
+    font-size: 37px;
+    font-weight: bold;
+    line-height: 44px;
+}
+
+.video-section .video-btn a .stroke-solid {
+    stroke-dashoffset: 0;
+    stroke-dashArray: 300;
+    stroke-width: 4px;
+    transition: stroke-dashoffset 1s ease, opacity 1s ease;
+}
+
+.video-section .video-btn a:hover .stroke-solid {
+    opacity: 0;
+    stroke-dashoffset: 300;
+}
+
+.video-section .video-btn a .stroke-dotted {
+    opacity: 0;
+    stroke-dasharray: 4, 5;
+    stroke-width: 1px;
+    transform-origin: 50% 50%;
+    animation: spin 4s infinite linear;
+    transition: opacity 1s ease, stroke-width 1s ease;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.video-section .video-btn a:hover .stroke-dotted {
+    stroke-width: 4px;
+    opacity: 1;
+}
+
+.video-section .video-btn a .icon {
+    transform-origin: 50% 50%;
+    transition: transform 200ms ease-out;
+
+}
+
+.video-section .video-btn a:hover .icon {
+    transform: scale(1.05);
+}
+
+/* End video section css */
+
+
+/* Article section css */
+
+
+.articles-items .item{
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 25px 0px rgba(46, 61, 73, 0.2);
+}
+.articles-items .item .img-holder {
+    height: 200px;
+    overflow: hidden;
+}
+
+.articles-items .item .img-holder a {
+    height: 200px;
+    overflow: hidden;
+}
+
+.articles-items .item .content {
+    padding: 30px;
+    background: #fff;
+}
+
+.articles-items .articles-info {
+    margin-right: -7px;
+    margin-left: -7px;
+    margin-bottom: 15px;
+}
+
+.articles-items .articles-info li i {
+    position: absolute;
+    left: 7px;
+    top: 2px;
+}
+
+.articles-items .articles-info li span {
+    padding-left: 20px;
+}
+
+.articles-items .content .title a{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.articles-items .articles-info li {
+    padding-left: 7px;
+    padding-right: 7px;
+    position: relative;
+    font-size: 14px;
+    color: #808080;
+    text-transform: capitalize;
+}
+
+/* End Article section css */
+
+/* Course pages css */
+
+.course-page-section .course-info-items  .item .box{
+    background-color: #ffffff;
+}
+.course-page-section .course-info-items .item{
+    margin-bottom: 30px;
+
+}
+
+/* End Course pages css */
+
+
+/* Footer section css */
+
+.site-footer{
+    background-color: #313131;
+    color: #ffffff;
+    padding: 50px 0 0;
+
+}
+.site-footer .title{
+    font-size: 20px;
+    line-height: 1.3;
+    padding-bottom: 13px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: normal;
+}
+.site-footer .about-content p{
+    color: #fff;
+}
+.site-footer .contact-info li{
+    padding-left: 25px;
+    position: relative;
+}
+
+.site-footer .contact-info li + li{
+    margin-top: 10px;
+}
+
+.site-footer .contact-info li,
+.site-footer .contact-info li a{
+    font-size: 15px;
+    color: #fff;
+}
+.site-footer .contact-info li:before{
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+}
+.site-footer .contact-info li:first-child:before {
+    content: '\f879';
+}
+.site-footer .contact-info li:nth-child(2):before {
+    content: '\f0e0';
+}
+.site-footer .menu-lists{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.site-footer .menu-lists li{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    display: inline-block;
+}
+.site-footer .menu-lists li +li{
+    margin-top: 5px;
+}
+.site-footer .menu-lists li a{
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+.site-footer .menu-lists li a:hover{
+    color: #dd3333;
+}
+.site-footer .menu-lists li a:before{
+    content: "\f054";
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    top: 2px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.site-footer .photo-lists{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.site-footer .photo-lists li{
+    padding-left: 5px;
+    padding-right: 5px;
+    flex: 0 0 33.33%;
+    margin-bottom: 10px;
+}
+.site-footer .photo-lists li a{
+    height: 80px;
+    position: relative;
+}
+.site-footer .photo-lists li a:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #dd3333;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.site-footer .photo-lists li a:hover:before{
+    opacity: 0.50;
+}
+.site-footer .social-links{
+    border-top: 1px solid #3a3a3a;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    border-bottom: 1px solid #3a3a3a;
+}
+.site-footer .social-links {
+    margin-left: -5px;
+    margin-right: -5px;
+    text-align: center;
+}
+.site-footer .social-links li{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.site-footer .social-links li + li{
+    margin-left: 0;
+}
+.site-footer .social-links li a{
+    display: inline-block;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 2px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #666;
+    color: #333;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.site-footer .social-links li a:hover{
+    background-color: #dd3333;
+    color: #fff;
+}
+.bottom-footer{
+    background-color: #2a2e31;
+    font-size: 14px;
+    padding: 25px 0;
+    color: #ccc;
+}
+.bottom-footer p{
+    margin-bottom: 0;
+    color: #fff;
+}
+
+/* End Footer section css */
