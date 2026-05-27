@@ -1,5 +1,9 @@
 <!------------------------------  Header section  ------------------------------>
-<?php include("header.php"); ?>
+<?php 
+/*
+Template Name: Course
+*/
+get_header(); ?>
 <!------------------------------ End  header section  ------------------------------>
 
 <!--  banner section  -->
@@ -206,6 +210,6 @@
 
 
 <!------------------------------  Footer section  ------------------------------>
-<?php include("footer.php"); ?>
+<?php get_footer(); ?>
 <!------------------------------ End  Footer section  ------------------------------>
 

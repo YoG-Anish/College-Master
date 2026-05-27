@@ -10,8 +10,8 @@
                         </p>
                     </div>
                     <ul class="contact-info">
-                       <li><a href="tel:+9779840464722" title="+9779840464722" class="phone">+9779840464722</a></li>
-                       <li><a href="tel:+9779840464722" title="+9779840464722" class="mail">mail@yourdomain.com</a></li>
+                        <li><a href="tel:+9779840464722" title="+9779840464722" class="phone">+9779840464722</a></li>
+                        <li><a href="tel:+9779840464722" title="+9779840464722" class="mail">mail@yourdomain.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,12 +47,26 @@
             </div>
         </div>
         <div class="social-links ">
-            <ul>
-                <li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#" title=""><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" title=""><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
-            </ul>
+            <?php
+            $social_links = [
+                'facebook_url'  => 'fa-facebook-f',
+                'twitter_url'   => 'fa-twitter',
+                'youtube_url'   => 'fa-youtube',
+                'instagram_url' => 'fa-instagram',
+            ];
+
+            foreach ($social_links as $setting_id => $icon_class) :
+                $url = get_theme_mod($setting_id);
+
+                if (! empty($url)) : ?>
+                    <li>
+                        <a href="<?php echo esc_url($url); ?>" target="_blank">
+                            <i class="fab <?php echo esc_attr($icon_class); ?>"></i>
+                        </a>
+                    </li>
+            <?php endif;
+            endforeach;
+            ?>
         </div>
     </div>
 </footer>
@@ -62,7 +76,7 @@
     </div>
 </div>
 
-
-
+<?php wp_footer(); ?>
 </body>
+
 </html>

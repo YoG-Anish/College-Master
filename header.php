@@ -16,16 +16,40 @@
                 <div class="row">
                     <div class="col-md-6 left">
                         <ul class="contact-info">
-                            <li class="phone"><a href="tel:+9779840464722" title="+9779840464722">+9779840464722</a></li>
-                            <li class="email"><a href="mailto:info@yoursitename.com" title="info@yoursitename.com">info@yoursitename.com</a>
-                            </li>
+                            <?php
+                            $phone_number = get_theme_mod('phone_number');
+                            if ($phone_number) {
+                                echo '<li class="phone"><a href="tel:' . $phone_number . '" title="' . $phone_number . '">' . $phone_number . '</a></li>';
+                            }
+                            $email = get_theme_mod('email');
+                            if ($email) {
+                                echo '<li class="email"><a href="mailto:' . $email . '" title="' . $email . '">' . $email . '</a>
+                            </li>';
+                            }
+                            ?>
                         </ul>
                     </div>
                     <div class="col-md-6 right">
                         <ul class="social-links">
-                            <li><a href="#" title="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" title="" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" title="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <?php
+                            $social_links = [
+                                'facebook_url'  => 'fa-facebook-f',
+                                'twitter_url'   => 'fa-twitter',
+                                'instagram_url' => 'fa-instagram',
+                            ];
+
+                            foreach ($social_links as $setting_id => $icon_class) :
+                                $url = get_theme_mod($setting_id);
+
+                                if (! empty($url)) : ?>
+                                    <li>
+                                        <a href="<?php echo esc_url($url); ?>" target="_blank">
+                                            <i class="fab <?php echo esc_attr($icon_class); ?>"></i>
+                                        </a>
+                                    </li>
+                            <?php endif;
+                            endforeach;
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -36,21 +60,25 @@
                 <div class="row align-items-center">
                     <div class="col-md-4">
                         <div class="logo">
-                            <a href="index.php" title="Logo">
-                                <img src="images/logo.png" alt="Logo">
+                            <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>">
+                                <?php
+                                $header_logo_id = get_theme_mod('header_logo');
+                                $header_logo_url = wp_get_attachment_url($header_logo_id);
+                                $header_logo_alt = get_post_meta($header_logo_id, '_wp_attachment_image_alt', true);
+                                ?>
+                                <img src="<?php echo esc_url($header_logo_url); ?>" alt="<?php echo esc_attr($header_logo_alt); ?>">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <nav>
-                            <ul class="primary-menu">
-                                <li><a href="index.php" title="">Home</a></li>
-                                <li><a href="course.php" title="">Course</a></li>
-                                <li><a href="teacher.php" title="">Teacher</a></li>
-                                <li><a href="events.php" title="">Event</a></li>
-                                <li><a href="forums.php" title="">Forums</a></li>
-                                <li><a href="blog.php" title="">blog</a></li>
-                            </ul>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'header-menu',
+                                'container' => 'ul',
+                                'menu_class' => 'primary-menu'
+                            ))
+                            ?>
                         </nav>
                     </div>
                 </div>
