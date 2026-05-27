@@ -85,8 +85,39 @@ function collegemaster_customizer($wp_customize) {
         'type'    => 'email',
     ));
 
-    //footer social links foreach
+    // footer menu title
+    $wp_customize->add_setting('footer_menu_title', array('default' => '', 'sanitize_callback' => 'sanitize_text_field'));
+    $wp_customize->add_control('footer_menu_title', array(
+        'label'   => 'Footer Menu Title',
+        'section' => 'footer_section',
+        'type'    => 'text',
+    ));
 
+    //footer gallery title
+    $wp_customize->add_setting('footer_gallery_title', array('default' => '', 'sanitize_callback' => 'sanitize_text_field'));
+    $wp_customize->add_control('footer_gallery_title', array(
+        'label'   => 'Footer Gallery Title',
+        'section' => 'footer_section',
+        'type'    => 'text',
+    ));
+
+    //footer map title  
+    $wp_customize->add_setting('footer_map_title', array('default' => '', 'sanitize_callback' => 'sanitize_text_field'));
+    $wp_customize->add_control('footer_map_title', array(
+        'label'   => 'Footer Map Title',
+        'section' => 'footer_section',
+        'type'    => 'text',
+    ));
+
+    //footer map  select page
+    $wp_customize->add_setting('footer_map_page', array('default' => '', 'sanitize_callback' => 'absint'));
+    $wp_customize->add_control('footer_map_page', array(
+        'label'   => 'Footer Map Page',
+        'section' => 'footer_section',
+        'type'    => 'dropdown-pages',
+    ));
+    
+    //footer social links foreach
     $social_networks = array(
         'facebook_url'  => 'Facebook URL',
         'twitter_url'   => 'Twitter URL',

@@ -4,45 +4,60 @@
             <div class="col-md-3">
                 <div class="footer-1">
                     <div class="about-content">
-                        <h2 class="title">About Us</h2>
+                        <h2 class="title"><?php echo get_theme_mod('footer_text'); ?></h2>
                         <p>
-                            Edumodo is perfectly suitable for school, college and university website with online education system.
+                            <?php echo get_theme_mod('footer_description'); ?>
                         </p>
                     </div>
                     <ul class="contact-info">
-                        <li><a href="tel:+9779840464722" title="+9779840464722" class="phone">+9779840464722</a></li>
-                        <li><a href="tel:+9779840464722" title="+9779840464722" class="mail">mail@yourdomain.com</a></li>
+                        <?php
+                        $footer_phone = get_theme_mod('footer_phone');
+                        if ($footer_phone) {
+                            echo '<li class="phone"><a href="tel:' . $footer_phone . '" title="' . $footer_phone . '">' . $footer_phone . '</a></li>';
+                        }
+                        $footer_email = get_theme_mod('footer_email');
+                        if ($footer_email) {
+                            echo '<li class="email"><a href="mailto:' . $footer_email . '" title="' . $footer_email . '">' . $footer_email . '</a></li>';
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="footer-2">
-                    <h2 class="title">Quick Links</h2>
-                    <ul class="menu-lists d-flex flex-wrap">
-                        <li><a href="index.php" title="">Home</a></li>
-                        <li><a href="course.php" title="">Course</a></li>
-                        <li><a href=notice.php" title="">Notice</a></li>
-                        <li><a href="blog.php" title="">Blog</a></li>
-                    </ul>
+                    <h2 class="title"><?php echo get_theme_mod('footer_menu_title'); ?></h2>
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer-menu',
+                        'menu_class' => 'menu-lists d-flex flex-wrap',
+                    ));
+                    ?>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="footer-3">
-                    <h2 class="title">Instagram Feed</h2>
+                    <h2 class="title"><?php echo get_theme_mod('footer_gallery_title'); ?></h2>
                     <ul class="photo-lists d-flex flex-wrap">
-                        <li><a href="" title=""><img src="images/blog1.jpg" alt="" class="img-cover"></a></li>
-                        <li><a href="" title=""><img src="images/blog2.jpg" alt="" class="img-cover"></a></li>
-                        <li><a href="" title=""><img src="images/blog3.jpg" alt="" class="img-cover"></a></li>
-                        <li><a href="" title=""><img src="images/blog.jpg" alt="" class="img-cover"></a></li>
-                        <li><a href="" title=""><img src="images/blog1.jpg" alt="" class="img-cover"></a></li>
-                        <li><a href="" title=""><img src="images/blog2.jpg" alt="" class="img-cover"></a></li>
+                        <li><a href="" title=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog1.jpg" alt="" class="img-cover"></a></li>
+                        <li><a href="" title=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog2.jpg" alt="" class="img-cover"></a></li>
+                        <li><a href="" title=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog3.jpg" alt="" class="img-cover"></a></li>
+                        <li><a href="" title=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog.jpg" alt="" class="img-cover"></a></li>
+                        <li><a href="" title=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog1.jpg" alt="" class="img-cover"></a></li>
+                        <li><a href="" title=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog2.jpg" alt="" class="img-cover"></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-3">
-                <h2 class="title">Find us on Map</h2>
+                <h2 class="title"><?php echo get_theme_mod('footer_map_title'); ?></h2>
                 <div class="map-iflame">
-                    <img src="images/footer-map.png" alt="">
+                    <?php
+                    $footer_map_page_id = get_theme_mod('footer_map_page');
+                    if ($footer_map_page_id) {
+                        $footer_map_page_url = get_permalink($footer_map_page_id); ?>
+                        <a href="<?php echo esc_url($footer_map_page_url); ?>" title="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-map.png" alt="">
+                        </a>
+                    <?php   } ?>
                 </div>
             </div>
         </div>
@@ -72,11 +87,11 @@
 </footer>
 <div class="bottom-footer">
     <div class="container">
-        <p>Copyright &copy; 2006 - 2020. All rights reserved.</p>
+        <p>Copyright &copy; 2002 - <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
     </div>
 </div>
 
 <?php wp_footer(); ?>
-</body>
 
+</body>
 </html>
